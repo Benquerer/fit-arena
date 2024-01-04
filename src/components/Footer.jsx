@@ -1,12 +1,11 @@
 import React from 'react'
+import '../styles/Footer.css'
 
 export const Footer = () => {
   return (
-    
-    <footer>
-        <br />
-        <p>&copy; {new Date().getFullYear()} FitArena @ IPT</p>
-    </footer>
+    <div className="footer">
+          <p>&copy; {new Date().getFullYear()} | FitArena @ IPT</p>
+    </div>
     
   )
 }
