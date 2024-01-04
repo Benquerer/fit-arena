@@ -18,6 +18,9 @@ export const Navbar = () => {
             </div>
             <ul className={menuOpen ? "open":""}>
                 <li>
+                    <NavLink to="/supplements">Supplements</NavLink>
+                </li>
+                <li>
                     <NavLink to="/compare">Compare</NavLink>
                 </li>
                 <li>

@@ -12,7 +12,8 @@ nav{
 }
 
 nav .title{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    padding-left: 1rem;
     margin: 1rem;
     font-weight: bold;
     text-decoration: none;
@@ -58,7 +59,7 @@ nav .menu span{
     border-radius: 0.2rem;
 }
 
-@media (max-width: 480px){
+@media (max-width: 800px){
     nav .menu{
         display: flex;
     }
