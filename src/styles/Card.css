@@ -1,0 +1,20 @@
+.card{
+    border: 1px solid green;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 128, 0, 0.539);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+    display: inline-block;
+}
+.card .cardImg{
+    width: 90%;
+    border-radius: 10%;
+    height: auto;
+}
+
+.card .cardTxt{
+    overflow: hidden;
+    max-height: 10%;
+}
