@@ -18,8 +18,8 @@ export const Supplements = (props) => {
 
   return (
     <>
-      <h2 id="counter"><b>Registered Supplements: </b>{props.data.length}</h2>
       <h4><b>Important Notice:</b> The details and prices of items on this gallery may vary due to various factors, including ongoing sales promotions, sizing availability, and other dynamic factors.  It's recommended to check each product on its original brand site.</h4>
+      <h3 id="counter"><b>Registered Supplements: </b>{props.data.length}</h3>
       <select className="selectType" id="selectType" value={typeSelect} onChange={e => { setTypeSelected(e.target.value);getCount()}}>
         <option value="0">All</option>
         <option value="1">Proteins</option>

@@ -5,18 +5,30 @@
     padding: 20px;
     margin: 10px;
     text-align: center;
-    width: 250px;
+    max-width: 250px;
     display: inline-block;
 }
 .card .cardImg{
-    width: 90%;
-    border-radius: 10%;
+    width: 100%;
     height: auto;
+    border-radius: 5%;
+    margin-bottom: 10px;
 }
 
-.card .cardTxt{
-    overflow: hidden;
-    max-height: 10%;
+.card .cardTitle{
     margin: 0;
-    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.card .cardInfo{
+    margin: 0;
+    margin-top: 0.5rem;
+    padding: 0;
+    background-color: red;
+}
+.card .cardPrice{
+    background-color: greenyellow;
+    margin: 0;
+    padding: 0;
+    
 }

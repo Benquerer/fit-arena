@@ -8,14 +8,14 @@ export const Gallery = (props) => {
     const filteredData = data.filter(item => item.type==props.filter)
     const cards = filteredData.map(item => <Card key={item.id} img={item.img} name={item.name} info={item.info}/>)
     return (
-      <div className="mainPage">
+      <div className="gallery">
         {cards}
       </div>
     )
   }else{
     const cards = data.map(item => <Card key={item.id} img={item.img} name={item.name} info={item.info}/>)
     return (
-      <div className="mainPage">
+      <div className="gallery">
         {cards}
       </div>
     )
