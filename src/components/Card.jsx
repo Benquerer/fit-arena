@@ -8,12 +8,13 @@ export const Card = (props) => {
   return (
     //<a href={props.originalUrl}>
       <div className="card" >
-          <img className="cardImg" src={Image} alt="teste" />
-          <div className="cardBox">
+        <div className="cardBody">
+            <img className="cardImg" src={Image} alt="teste" />
             <h2 className="cardTitle">{props.name}</h2>
-            <p className="cardInfo">{props.brand} | {props.size}</p>
-            <p className="cardPrice">{props.price}</p>   
-          </div>           
+            <p className="cardInfo">Brand: {props.brand}</p>
+            <p className="cardInfo">Sizing: {props.size}</p>
+            <button className="cardPrice">${props.price}</button>          
+          </div>         
       </div>
     //</a>
   )

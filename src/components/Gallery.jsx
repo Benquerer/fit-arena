@@ -13,7 +13,7 @@ export const Gallery = (props) => {
       </div>
     )
   }else{
-    const cards = data.map(item => <Card key={item.id} img={item.img} name={item.name} info={item.info}/>)
+    const cards = data.map(item => <Card key={item.id} img={item.img} name={item.name} originalUrl={item.originalUrl} brand={item.brand} size={item.size} price={item.price}/>)
     return (
       <div className="gallery">
         {cards}
