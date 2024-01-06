@@ -2,40 +2,31 @@ import React, { useState, useEffect } from 'react'
 import { Gallery } from '../components/Gallery'
 
 
-export const Supplements = () => {
+export const Supplements = (props) => {
 
-  const [selects,setSelects] = useState()
-  const [data,setData] = useState([])
+  const [typeSelect, setTypeSelected] = useState()
 
-  useEffect(() =>{
-    const fetchData = async() => {
-      try{
-        const response = await fetch('https://api.sheety.co/933c1e54117bebf9492ad891fe3f0b73/fitArenaGallery/folha1')
-        if(!response.ok){
-          throw new Error("FAILED")
-        }
-        const obj = await response.json()
-        setData(obj.folha1)
-        console.log(obj.folha1)
-      }catch(error){
-        console.error(error)
-      }
-    }
-
-    fetchData()
-
-  },[])
+  function getCount() { 
+    let selectedValue = document.getElementById("selectType").value
+    if(selectedValue!=0){
+      const count = props.data.filter(item => item.type==selectedValue)  
+      document.getElementById("counter").innerHTML = "<b>Registered Supplements: </b>" + count.length
+    }else{
+      document.getElementById("counter").innerHTML = "<b>Registered Supplements: </b>" + props.data.length
+    } 
+  }            
 
   return (
-      <>
-      <h2 className='title'>Registered supplemets: {data.length}</h2>
-      <select className="selectType" id="selectType" value={selects} onChange={e=>setSelects(e.target.value)}>
+    <>
+      <h2 id="counter"><b>Registered Supplements: </b>{props.data.length}</h2>
+      <h4><b>Important Notice:</b> The details and prices of items on this gallery may vary due to various factors, including ongoing sales promotions, sizing availability, and other dynamic factors.  It's recommended to check each product on its original brand site.</h4>
+      <select className="selectType" id="selectType" value={typeSelect} onChange={e => { setTypeSelected(e.target.value);getCount()}}>
         <option value="0">All</option>
         <option value="1">Proteins</option>
         <option value="2">Pre-Workouts</option>
         <option value="3">Other</option>
       </select>
-      <Gallery hasFilter={true} items={data} filter={selects}/>
-      </>
+      <Gallery hasFilter={true} items={props.data} filter={typeSelect} />
+    </>
   )
 }
