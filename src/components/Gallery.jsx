@@ -1,14 +1,30 @@
 import React from 'react'
 import { Card } from '../components/Card'
 
-export const Gallery = () => {
-  return (
-    <div>
-      <Card name="Sup 1" info="TESTE"></Card>
-      <Card name="Sup 2" info="TESTE"></Card>
-      <Card name="Sup 3" info="TESTE" img="150"></Card>
-      <Card img="550">></Card>
-      <Card img="950">></Card>
-    </div>
-  )
+export const Gallery = (props) => {
+  
+  const data = props.items
+  if(props.hasFilter && props.filter!=0){
+    const filteredData = data.filter(item => item.type==props.filter)
+    const cards = filteredData.map(item => <Card key={item.id} img={item.img} name={item.name} info={item.info}/>)
+    return (
+      <div className="mainPage">
+        {cards}
+      </div>
+    )
+  }else{
+    const cards = data.map(item => <Card key={item.id} img={item.img} name={item.name} info={item.info}/>)
+    return (
+      <div className="mainPage">
+        {cards}
+      </div>
+    )
+  }
+  
+}
+
+Gallery.defaultProps = {
+  hasFilter: false,
+  items: [],
+  filter: "0"
 }

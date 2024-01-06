@@ -9,10 +9,17 @@
 }
 
 .mainPage{
-    margin: 1rem;
     text-align: center;
 }
 
-.mainPage .title{
-    margin-bottom: 1rem;
+.title{
+    text-align: center;
+    margin: 1rem;
+}
+
+.selectType{
+    margin: 0px auto;
+    width: 9rem;
+    height: 2rem;
+    font-size: 100%;
 }
