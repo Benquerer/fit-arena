@@ -11,8 +11,8 @@ export const Card = (props) => {
         <div className="cardBody">
             <img className="cardImg" src={Image} alt="teste" />
             <h2 className="cardTitle">{props.name}</h2>
-            <p className="cardInfo">Brand: {props.brand}</p>
-            <p className="cardInfo">Sizing: {props.size}</p>
+            <p className="cardInfo"><b>Brand:</b> {props.brand}</p>
+            <p className="cardInfo"><b>Sizing:</b>  {props.size}</p>
             <button className="cardPrice">${props.price}</button>          
           </div>         
       </div>

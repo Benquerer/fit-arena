@@ -19,9 +19,14 @@
 
 .selectType{
     margin: 0px auto;
-    width: 9rem;
-    height: 2rem;
-    font-size: 100%;
+    margin-top: 1rem;
+    border: none;
+    appearance: none;
+    padding: 0.7rem;
+    width: 12rem;
+    color: white;
+    background-color: seagreen;
+    font-size: 20px;
 }
 
 .gallery{
@@ -31,3 +36,4 @@
     gap: 2rem;
     justify-content: center;
 }
+
