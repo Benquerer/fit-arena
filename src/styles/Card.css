@@ -6,6 +6,7 @@
 }
 
 .card{
+    text-align: left;
     overflow: hidden;
     border:2px groove red ;  
     border-radius: 0.2rem;
@@ -13,20 +14,23 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: default;
+    animation: anim 600ms ease-in;
 }
 .card:hover{
     box-shadow: 0 2px 30px lightgray;
 }
 
 .card .cardImg{
-    height: 12rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    height: 17rem;
     width: 100%;
     object-fit: cover;
 }
 
 .card .cardTitle{
     padding: 1rem;
-    font-size: 1.18rem;
+    font-size: 1.4rem;
     text-decoration: underline;
 }
 
@@ -38,7 +42,7 @@
     padding: 1rem;
     font-family: inherit;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 1rem;
     border: 2px solid red;
     background: transparent;
@@ -50,4 +54,15 @@
 .card .cardPrice:hover{
     background: red;
     color: black;
+}
+
+
+@keyframes anim {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }

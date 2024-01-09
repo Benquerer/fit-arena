@@ -8,12 +8,13 @@ nav{
     align-items: center;
     background-color: #5b5b5b;
     position: sticky;
-    top: 0;
+    top: 0; 
+    animation: navLoad 500ms ease-in;
 }
 
 nav .title{
-    font-size: 2rem;
-    padding-left: 1rem;
+    font-size: 3rem;
+    padding-left: 1.5rem;
     margin: 1rem;
     font-weight: bold;
     text-decoration: none;
@@ -59,8 +60,10 @@ nav .menu span{
     border-radius: 0.2rem;
 }
 
-@media (max-width: 800px){
+@media (max-width: 500px){
     nav .menu{
+        margin-top: 2.2rem;
+        margin-right: 1rem;
         display: flex;
     }
 
@@ -89,4 +92,13 @@ nav .menu span{
     }
 
 
+}
+
+@keyframes navLoad{
+    0%{
+        transform: translateY(-100%);
+    }
+    110%{
+        transform: translateY(0%);
+    }
 }

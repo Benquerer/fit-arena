@@ -1,0 +1,30 @@
+.compare{
+    text-align: center;
+}
+
+.compare .imgSupps{
+    width: 80vh;
+}
+
+.compare h1{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+.compare p{
+    line-height: 1.2rem;
+}
+
+.compare h3{
+    padding: 4rem;
+    text-decoration: overline;
+    text-decoration-color: red;
+}
+
+@media (max-width:500px){
+    .compare .imgSupps{
+        width: 90%;
+    }
+}

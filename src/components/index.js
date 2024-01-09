@@ -1,2 +1,5 @@
 export * from "./Footer"
 export * from "./Navbar"
+export * from "./Start"
+export * from "./Gallery"
+export * from "./Card"

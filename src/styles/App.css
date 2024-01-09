@@ -1,4 +1,5 @@
 .App{
+    font-size: 1.4rem;
     background-color: #101010;
     height: 100%;
     min-height: 100vh;
@@ -17,17 +18,7 @@
     margin: 1rem;
 }
 
-.selectType{
-    margin: 0px auto;
-    margin-top: 1rem;
-    border: none;
-    appearance: none;
-    padding: 0.7rem;
-    width: 12rem;
-    color: white;
-    background-color: seagreen;
-    font-size: 20px;
-}
+
 
 .gallery{
     margin: 2rem;
@@ -37,3 +28,64 @@
     justify-content: center;
 }
 
+.Alert{
+    background: #5b5b5b;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.Alert a{
+    color: red;
+    text-decoration: underline;
+}
+
+.supplements {
+    text-align: center;
+}
+
+.supplements .selectType{
+    margin: 1.5rem 1rem;
+    padding-left: 100rem;
+    border: none;
+    appearance: none;
+    padding: 0.5rem;
+    width: 30vh;
+    color: #FFFFFF;
+    background-color: rgb(255, 0, 0);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.supplements .selectType option{
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+.supplements h4{
+    margin: 0px auto;
+    width: 70vh;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    animation: notice 800ms ease-in;
+}
+
+@media (max-width: 500px){
+    .Alert{
+        text-wrap: balance;
+        width: 100%;
+    }
+    
+    .supplements h4{
+        width: 100%;
+    }   
+}
+
+@keyframes notice {
+    0%{
+        transform: scale(0%);
+    }
+    100%{
+        transform: scale(100%);  
+    }
+}

@@ -1,8 +1,28 @@
 .footer{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
     background-color: #5b5b5b;
     margin-top: auto;
+    animation: animFoot 400ms ease-in;
 }
 p{
     padding: 1rem 1rem;
     margin: 1rem;
+}
+
+a{
+    padding: 1rem 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+@keyframes animFoot {
+    0%{
+        transform: translateY(+100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
 }

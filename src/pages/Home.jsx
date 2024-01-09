@@ -1,7 +1,8 @@
 import React from 'react'
+import { Start } from '../components'
 
 export const Home = () => {
   return (
-    <div>Home</div>
+    <Start></Start>
   )
 }
