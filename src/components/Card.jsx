@@ -11,17 +11,15 @@ export const Card = (props) => {
   }
 
   return (
-    // <a href={props.originalUrl} target="_blank">
     <div className="card" >
       <div className="cardBody">
         <img className="cardImg" src={Image} alt="teste" />
         <h2 className="cardTitle">{props.name}</h2>
         <p className="cardInfo"><b>Brand:</b> {props.brand}</p>
         <p className="cardInfo"><b>Sizing:</b>  {props.size}</p>
-        <button className="cardPrice" onClick={NewTab}>${props.price}</button>
+        <button className="cardPrice" onClick={NewTab}>&euro; {props.price}</button>
       </div>
     </div>
-    //</a>
   )
 }
 

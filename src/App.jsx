@@ -52,7 +52,7 @@ function App() {
         <Route path="/supplements" element={<Supplements data={data} />} />
         <Route path="/compare" element={<Compare />} />
         <Route path="/about" element={<About />} />
-        <Route path="/backoffice" element={<Backoffice />} />
+        <Route path="/backoffice" element={<Backoffice  data={data}/>} />
       </Routes>
       <Footer />
     </div>

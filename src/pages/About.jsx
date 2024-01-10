@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/About.css'
-import { FaSquareFacebook, FaXTwitter, FaInstagram } from 'react-icons/fa6'
+import { FaSquareFacebook, FaSquareXTwitter, FaInstagram, FaLinkedin  } from 'react-icons/fa6'
+import { FaMailBulk } from "react-icons/fa";
 
 export const About = () => {
   return (
@@ -28,9 +29,21 @@ export const About = () => {
           </li>
           <li className="socialsLi">
             <a href="https://twitter.com/home" target='_blank'>
-              <FaXTwitter />
+              <FaSquareXTwitter />
             </a>
           </li>
+          <li className="socialsLi">
+            <a href="https://www.linkedin.com/" target='_blank'> 
+              <FaLinkedin />
+            </a>
+          </li>
+          <li className="socialsLi">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target='_blank'>
+              <FaMailBulk />
+            </a>
+          </li>
+
+          
         </ul>
       </div>
     </div>
