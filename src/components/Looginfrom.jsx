@@ -192,7 +192,8 @@ export const Looginfrom = (props) => {
                 {rows}
             </div>
         </>
-    )
+    ) 
 
     return (login ? logged : notLogged)
+    
 }

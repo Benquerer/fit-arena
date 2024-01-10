@@ -18,7 +18,7 @@ export const About = () => {
       </div>
       <div className="aboutBlock">
         <h2 className="aboutTitle">About This Project</h2>
-        <p className="aboutTxt">This project, created by André Benquerer, was developed as a final project for the "Interfaces Web" class at the Polytechnic Institute of Tomar. Constructing a web application using React.js, incorporating the use of an API to retrieve information from a CRUD-based system was the project's main goal. The developer intends to continue expanding this application as an ongoing personal project</p>
+        <p className="aboutTxt">This project, created by André Benquerer and Diogo Cardeira, was developed as a final project for the "Interfaces Web" class at the Polytechnic Institute of Tomar. Constructing a web application using React.js, incorporating the use of an API to retrieve information from a CRUD-based system was the project's main goal. The developers intend to continue expanding this application as an ongoing group project</p>
       </div>
       <div className="divIdea">
         <h3>Do you have any ideas that might help us? Tell us!</h3>

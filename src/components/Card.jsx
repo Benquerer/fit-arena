@@ -6,8 +6,7 @@ export const Card = (props) => {
   const Image = props.img === "" ? "https://via.placeholder.com/850" : props.img
 
   function NewTab() {
-    window.open(
-      props.originalUrl, "_blank");
+    window.open(props.originalUrl, "_blank");
   }
 
   return (
