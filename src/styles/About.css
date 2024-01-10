@@ -44,3 +44,11 @@
     margin: 0 2.5rem;
 }
 
+@media (max-width:500px){
+    .divIdea h3{
+        text-decoration: none;
+    }
+    .divIdea .socials{
+        flex-direction: column;
+    }
+}

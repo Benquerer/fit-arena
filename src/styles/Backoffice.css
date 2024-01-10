@@ -89,3 +89,50 @@
     margin: 0 5rem;
     padding: 0;
 }
+
+.crudDiv{
+    margin: 0px auto;
+    width: 40vh;
+    padding: 3rem;
+    border: 2px solid red;
+}
+
+.crudDiv .crudFrom{ 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.crudDiv .crudFrom *{
+    margin: 0px auto;
+}
+.crudDiv .crudFrom .crudLabel{
+    font-size: 1.5rem;
+    width: 10rem;
+}
+
+.crudDiv .crudFrom .crudInput{
+    padding-left: 0.3rem;
+    font-size: 2rem;
+    width: 10rem;
+    height: 2rem;
+}
+
+.crudDiv .crudFrom .crudIDLabel{
+    text-align: center;
+}
+
+.crudDiv .crudFrom .crudBtn{
+    border: 2px solid red;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.8rem;
+    
+}
+
+@media (max-width:500px){
+    .currentData .rowData .rowP{
+        margin: 1rem;
+    }
+}

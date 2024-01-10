@@ -6,7 +6,7 @@ import { About, Compare, Home, Supplements, Backoffice } from "./pages"
 
 function App() {
 
-  // //nao quero estourar os fetchs ne ashdhasdasd
+  //nao quero estourar os fetchs ne ashdhasdasd
   const data = [
     { id: 1, img: "https://static.thcdn.com/productimg/1600/1600/10530943-1224889444460882.jpg", name: "Impact Whey Protein", type: 1 },
     { id: 2, img: "https://static.thcdn.com/productimg/1600/1600/10530911-5884889444360331.jpg", name: "Impact Whey Isolate", type: 1 },
