@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Routes, Route } from "react-router-dom"
 import { Navbar, Footer } from "./components"
 import "./styles/App.css"
-import { About, Contacts, Compare, Home, Supplements, Backoffice } from "./pages"
+import { About, Compare, Home, Supplements, Backoffice } from "./pages"
 
 function App() {
 
@@ -52,7 +52,6 @@ function App() {
         <Route path="/supplements" element={<Supplements data={data} />} />
         <Route path="/compare" element={<Compare />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contacts" element={<Contacts />} />
         <Route path="/backoffice" element={<Backoffice />} />
       </Routes>
       <Footer />

@@ -1,0 +1,46 @@
+.aboutBlock{
+    margin: 2rem;
+
+}
+
+.aboutTitle{
+    color: red;
+    font-size: 3rem;
+    font-weight: lighter;
+
+}
+
+.aboutTitle::before{
+    color: white;
+    content: '→ '
+    
+}
+
+.aboutTxt{
+    font-size: 1.8rem;
+    line-height: 1.3rem;
+}
+
+.divIdea{
+    text-align: center;
+}
+.divIdea h3{
+    font-size: 2.5rem;
+    text-decoration: underline;
+    text-decoration-line: overline;
+    text-decoration-color: red;
+}
+.divIdea .socials{
+    margin: 2rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divIdea .socials svg{
+    color: red;
+    font-size: 6rem;
+    margin: 0 2.5rem;
+}
+

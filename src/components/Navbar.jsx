@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { IoMdFitness } from "react-icons/io";
 import "../styles/Navbar.css"
 
 export const Navbar = () => {
@@ -25,9 +26,6 @@ export const Navbar = () => {
                 </li>
                 <li>
                     <NavLink to="/about">About</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/contacts">Contacts</NavLink>
                 </li>
             </ul>
         </nav>

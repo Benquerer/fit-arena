@@ -1,6 +1,5 @@
 export * from "./Home"
 export * from "./Compare"
 export * from "./About"
-export * from "./Contacts"
 export * from "./Supplements"
 export * from "./Backoffice"
