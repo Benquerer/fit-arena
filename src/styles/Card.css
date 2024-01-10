@@ -17,7 +17,9 @@
     animation: anim 600ms ease-in;
 }
 .card:hover{
-    box-shadow: 0 2px 30px lightgray;
+    border-radius: 1rem;
+    transform: scale(1.04);
+    box-shadow: 0 2px 15px lightgray;
 }
 
 .card .cardImg{

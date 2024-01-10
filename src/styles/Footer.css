@@ -7,6 +7,7 @@
     animation: animFoot 400ms ease-in;
 }
 p{
+    font-size: 2rem;
     padding: 1rem 1rem;
     margin: 1rem;
 }
@@ -16,6 +17,12 @@ a{
     margin: 1rem;
     text-decoration: none;
     color: inherit;
+}
+
+@media (max-width: 500px){
+    p{
+        font-size: 1.5rem;
+    }
 }
 
 @keyframes animFoot {

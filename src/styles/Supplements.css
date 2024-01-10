@@ -1,0 +1,38 @@
+.supplements {
+    text-align: center;
+}
+
+.supplements .selectType{
+    margin: 1.5rem 1rem;
+    padding-left: 100rem;
+    border: none;
+    appearance: none;
+    padding: 0.5rem;
+    width: 30vh;
+    color: #FFFFFF;
+    background-color: rgb(255, 0, 0);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.supplements .selectType option{
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+.supplements h4{
+    margin: 0px auto;
+    width: 70vh;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    animation: notice 800ms ease-in;
+}
+
+@media (max-width: 500px){
+    
+    .supplements h4{
+        width: 100%;
+    } 
+      
+}
