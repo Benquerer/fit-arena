@@ -7,6 +7,9 @@ import img3 from '../assets/img3.png'
 
 
 export const Start = () => {
+
+    //returns the homepage (its always the same)
+    //uses variables that were imported for the images src attributes
     return (
         <div className="Homepage">
             <div className="startBlock">

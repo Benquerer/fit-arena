@@ -1,9 +1,12 @@
 import React from 'react'
 import '../styles/About.css'
-import { FaSquareFacebook, FaSquareXTwitter, FaInstagram, FaLinkedin  } from 'react-icons/fa6'
+import { FaSquareFacebook, FaSquareXTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa6'
 import { FaMailBulk } from "react-icons/fa";
 
 export const About = () => {
+  //returns the about page (its always the same)
+  //since the webpage is not yet for a real company, all the "socials" icons redirect to the social network main website
+  //the email link is also a placeholder, for now its just a "RickRoll"
   return (
     <div>
       <div className="aboutBlock">
@@ -39,7 +42,7 @@ export const About = () => {
             </a>
           </li>
           <li className="socialsLi">
-            <a href="https://www.linkedin.com/" target='_blank'> 
+            <a href="https://www.linkedin.com/" target='_blank'>
               <FaLinkedin />
             </a>
           </li>
@@ -48,8 +51,6 @@ export const About = () => {
               <FaMailBulk />
             </a>
           </li>
-
-          
         </ul>
       </div>
     </div>

@@ -3,6 +3,9 @@ import img4 from '../assets/img4.png'
 import '../styles/Compare.css'
 
 export const Compare = () => {
+
+  //this page is the next focus of development
+  //for now its just a place holder
   return (
     <div className="compare">
       <h1>Coming Soon...</h1>
