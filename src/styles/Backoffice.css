@@ -135,4 +135,7 @@
     .currentData .rowData .rowP{
         margin: 1rem;
     }
+    .loginFrom{
+        margin-bottom: 2rem;
+    }
 }

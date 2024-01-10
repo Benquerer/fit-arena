@@ -7,8 +7,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: #5b5b5b;
-    position: sticky;
-    top: 0; 
+    /* position: sticky;
+    top: 0;  */
     animation: navLoad 500ms ease-in;
 }
 
@@ -62,7 +62,7 @@ nav .menu span{
 
 @media (max-width: 500px){
     nav .menu{
-        margin-top: 2.2rem;
+        margin-top: 5rem;
         margin-right: 1rem;
         display: flex;
     }
